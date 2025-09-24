@@ -1,5 +1,5 @@
 # ecrf
-Copying data into from excel into website
+Copying data from excel into website
 
 ==============================
 ======== README FIRST ======== 
