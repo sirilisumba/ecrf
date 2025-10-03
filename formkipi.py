@@ -461,10 +461,10 @@ try:
     #
     #
     # Loop ke file deleterow.py
-    jawaban = input("➡️  Continue to delete row 3? (Y/N): ").strip().lower()
+    jawaban = input("➡️  Continue to next data? (Y/N): ").strip().lower()
 
     if jawaban == 'y':
-        print("▶️  Continue next process...")
+        print("▶️  Continue next data...")
         # lanjutkan script
     elif jawaban == 'n':
         print("⏹️ Process stop by user.")
@@ -475,6 +475,10 @@ try:
     # >>>> Lanjut ke file deleterow.py secara otomatis <<<<
     print("▶️  Continue deleting row...")
     subprocess.run(["python", "deleterow.py"])
+
+    # >>>> Lanjut ke file ecrf1.py secara otomatis <<<<
+    print("▶️  Continue next nomor inklusi...")
+    subprocess.run(["python", "ecrf1.py"])
 
 
 except KeyboardInterrupt:
