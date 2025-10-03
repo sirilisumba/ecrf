@@ -225,7 +225,7 @@ try:
     
         #
     # Loop ke file bukavaksinasi.py
-    jawaban = input("➡️  Continue to FORM DATA VAKSINASI? (Y/N): ").strip().lower()
+    jawaban = input("➡️  Continue to FORM DATA VAKSINASI? Jika ya, buka dulu formnya di website (Y/N): ").strip().lower()
 
     if jawaban == 'y':
         print("▶️  Continue to next form...")
@@ -237,7 +237,7 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openvaksinasi.py secara otomatis <<<<
-    subprocess.run(["python", "openvaksinasi.py"])
+    subprocess.run(["python", "vaksinasi.py"])
 
 
 except KeyboardInterrupt:
@@ -245,3 +245,4 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
