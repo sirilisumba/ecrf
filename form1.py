@@ -159,7 +159,7 @@ try:
     #
 
     # Loop ke file openform2.py
-    jawaban = input("➡️  Continue to FORM INKLUSI/EKSKLUSI? (Y/N): ").strip().lower()
+    jawaban = input("➡️  Continue to FORM INKLUSI/EKSKLUSI? Jika ya, buka dulu formnya di website (Y/N): ").strip().lower()
 
     if jawaban == 'y':
         print("▶️  Continue to next form...")
@@ -171,10 +171,11 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke openform2.py secara otomatis <<<<
-    subprocess.run(["python", "openform2.py"])
+    subprocess.run(["python", "form2.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
