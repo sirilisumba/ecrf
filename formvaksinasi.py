@@ -300,7 +300,7 @@ try:
     #
     #
     # Loop ke file openkipi.py
-    jawaban = input("➡️  Continue to FORM KIPI? (Y/N): ").strip().lower()
+    jawaban = input("➡️  Continue to FORM KIPI? Jika ya, buka dulu formnya di website (Y/N): ").strip().lower()
 
     if jawaban == 'y':
         print("▶️  Continue to next form...")
@@ -312,10 +312,11 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openkipi.py secara otomatis <<<<
-    subprocess.run(["python", "openkipi.py"])
+    subprocess.run(["python", "kipi.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
