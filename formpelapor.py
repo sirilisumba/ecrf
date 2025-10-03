@@ -190,7 +190,7 @@ try:
     #
     #
     # Loop ke file openpasien.py
-    jawaban = input("➡️  Continue to FORM INFORMASI PASIEN? (Y/N): ").strip().lower()
+    jawaban = input("➡️  Continue to FORM INFORMASI PASIEN? Jika ya, buka dulu formnya di website (Y/N): ").strip().lower()
 
     if jawaban == 'y':
         print("▶️  Continue to next form...")
@@ -202,10 +202,11 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openpasien.py secara otomatis <<<<
-    subprocess.run(["python", "openpasien.py"])
+    subprocess.run(["python", "pasien.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
