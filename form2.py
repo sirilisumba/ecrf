@@ -118,7 +118,7 @@ try:
     #
     #
     # Loop ke file bukaisi3.py
-    jawaban = input("➡️  Continue to FORM TAMBAH NOMOR INKLUSI? (Y/N): ").strip().lower()
+    jawaban = input("➡️  Continue to FORM TAMBAH NOMOR INKLUSI? Jika ya, buka dulu formnya di website (Y/N): ").strip().lower()
 
     if jawaban == 'y':
         print("▶️  Continue to next form...")
@@ -130,10 +130,11 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openform3.py secara otomatis <<<<
-    subprocess.run(["python", "openform3.py"])
+    subprocess.run(["python", "form3.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
