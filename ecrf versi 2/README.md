@@ -19,6 +19,8 @@
     f. formvaksinasi.py
     g. formkipi.py
 # 3. File data.xlsx harus satu folder derngan script dan chromedriver.
+# 4. Cara jalankan: ketik di cmd: py ecrfv2-1.py
+# 5. Jika mulai dari file kedua, maka cara panggil di cmd: py ecrfv2-2.py
 
 # Troubleshoot:
 # Jika koneksi dari cmd dan brave menggunakan command ini tidak berhasil:
