@@ -18,6 +18,7 @@
     e. formpasien.py
     f. formvaksinasi.py
     g. formkipi.py
+# 3. File data.xlsx harus satu folder derngan script dan chromedriver.
 
 # Troubleshoot:
 # Jika koneksi dari cmd dan brave menggunakan command ini tidak berhasil:
