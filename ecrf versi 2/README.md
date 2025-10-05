@@ -1,5 +1,5 @@
 # ----- Script ECRF Versi 2 ----- 
-
+#
 # Update:
 # 1. Looping non-stop, baik dari form ke form, maupun dari data ke data.
 # 2. Break hanya terjadi jika: 
@@ -7,7 +7,7 @@
     b. row 3 di data.xlsx kosong
     c. server &/ wifi lemot, sehingga script break
 # 3. Setiap error, ditandai dengan suara beep 3x
-
+#
 # Catatan:
 # 1. Jalankan versi 2, hanya jika, anda yakin dengan file excel sudah benar semua.
 # 2. Jika terjadi break, lanjutkan dengan script per form:
@@ -21,7 +21,7 @@
 # 3. File data.xlsx harus satu folder derngan script dan chromedriver.
 # 4. Cara jalankan: ketik di cmd: py ecrfv2-1.py
 # 5. Jika mulai dari file kedua, maka cara panggil di cmd: py ecrfv2-2.py
-
+#
 # Troubleshoot:
 # Jika koneksi dari cmd dan brave menggunakan command ini tidak berhasil:
     "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --remote-debugging-port=9222
