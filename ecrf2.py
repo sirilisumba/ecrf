@@ -201,32 +201,32 @@ try:
                         time.sleep(0.25)
                         # AS2 -> form_group_58767 >>> NYERI LOKAL
                         set_radio(driver, "form_group_58767", data['val_nyeri'])
-                        # if set_radio(driver, "form_group_58767", data['val_nyeri']):
-                        #     if str(data['val_nyeri']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58772", data['val_lokal_tgl']) # AT2 (tgl)
-                        #         isi_time(driver, wait_short, "itemid_58773", data['val_lokal_wkt']) # AU2 (wkt)
-                        #         set_text(driver, "itemid_58846", data['val_lokal_hr']) # AV2 (hari)
+                        if set_radio(driver, "form_group_58767", data['val_nyeri']):
+                            if str(data['val_nyeri']).strip() == "1":
+                                isi_date(driver, wait_short, "itemid_58772", data['val_lokal_tgl']) # AT2 (tgl)
+                                isi_time(driver, wait_short, "itemid_58773", data['val_lokal_wkt']) # AU2 (wkt)
+                                isi_textinput(driver, wait_short, "itemid_58846", data['val_lokal_hr']) # AV2 (hari)
                         # AW2 -> form_group_58768 >>> KEMERAHAN
                         set_radio(driver, "form_group_58768", data['val_merah'])
-                        # if set_radio(driver, "form_group_58768", data['val_merah']):
-                        #     if str(data['val_merah']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58775", data['val_merah_tgl']) # AX2 (tgl)
-                        #         isi_time(driver, wait_short, "itemid_58799", data['val_merah_wkt']) # AY2 (wkt)
-                        #         set_text(driver, "itemid_58847", data['val_merah_hr']) # AZ2 (hari)
+                        if set_radio(driver, "form_group_58768", data['val_merah']):
+                            if str(data['val_merah']).strip() == "1":
+                                isi_date(driver, wait_short, "itemid_58775", data['val_merah_tgl']) # AX2 (tgl)
+                                isi_time(driver, wait_short, "itemid_58799", data['val_merah_wkt']) # AY2 (wkt)
+                                isi_textinput(driver, wait_short, "itemid_58847", data['val_merah_hr']) # AZ2 (hari)
                         # BA2 -> form_group_58769 >>> PENEBALAN
                         set_radio(driver, "form_group_58769", data['val_tebal'])
-                        # if set_radio(driver, "form_group_58769", data['val_tebal']):
-                        #     if str(data['val_tebal']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58777", data['val_tebal_tgl']) # BB2 (tgl)
-                        #         isi_time(driver, wait_short, "itemid_58801", data['val_tebal_wkt']) # BC2 (wkt)
-                        #         set_text(driver, "itemid_58848", data['val_tebal_hr']) # BD2 (hari)
+                        if set_radio(driver, "form_group_58769", data['val_tebal']):
+                            if str(data['val_tebal']).strip() == "1":
+                                isi_date(driver, wait_short, "itemid_58777", data['val_tebal_tgl']) # BB2 (tgl)
+                                isi_time(driver, wait_short, "itemid_58801", data['val_tebal_wkt']) # BC2 (wkt)
+                                isi_textinput(driver, wait_short, "itemid_58848", data['val_tebal_hr']) # BD2 (hari)
                         # BE2 -> form_group_58770 >>> PEMBENGKAKAN
                         set_radio(driver, "form_group_58770", data['val_bengkak'])
-                        # if set_radio(driver, "form_group_58770", data['val_bengkak']):
-                        #     if str(data['val_bengkak']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58779", data['val_bengkak_tgl']) # BF2 (tgl)
-                        #         isi_time(driver, wait_short, "itemid_58803", data['val_bengkak_wkt']) # BG2 (wkt)
-                        #         set_text(driver, "itemid_58849", data['val_bengkak_hr']) # BH2 (hari)
+                        if set_radio(driver, "form_group_58770", data['val_bengkak']):
+                            if str(data['val_bengkak']).strip() == "1":
+                                isi_date(driver, wait_short, "itemid_58779", data['val_bengkak_tgl']) # BF2 (tgl)
+                                isi_time(driver, wait_short, "itemid_58803", data['val_bengkak_wkt']) # BG2 (wkt)
+                                isi_textinput(driver, wait_short, "itemid_58849", data['val_bengkak_hr']) # BH2 (hari)
                         # BI2 -> form_group_58782 >>> LAIN-LAIN
                         if set_radio(driver, "form_group_58782", data['val_lokal_lain']):
                             if str(data['val_lokal_lain']).strip() == "1":
@@ -234,31 +234,31 @@ try:
                                 # BJ2 -> form_group_59084 >>> lain-lain 1
                                 if set_radio(driver, "form_group_59084", data['val_lokal_lain1']):
                                     if str(data['val_lokal_lain1']).strip() == "1":
-                                        set_text(driver, "itemid_59088", data['val_lokal_lain1_nama']) # BK2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59089", data['val_lokal_lain1_tgl']) # BL2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59088", data['val_lokal_lain1_nama']) # BK2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59089", data['val_lokal_lain1_tgl']) # BL2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59090", data['val_lokal_lain1_wkt']) # BM2 (wkt)
-                                        # set_text(driver, "itemid_59091", data['val_lokal_lain1_hr']) # BN2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59091", data['val_lokal_lain1_hr']) # BN2 (hari)
                                 # BO2 -> form_group_59085 >>> lain-lain 2
                                 if set_radio(driver, "form_group_59085", data['val_lokal_lain2']):
                                     if str(data['val_lokal_lain2']).strip() == "1":
-                                        set_text(driver, "itemid_59092", data['val_lokal_lain2_nama']) # BP2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59093", data['val_lokal_lain2_tgl']) # BQ2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59092", data['val_lokal_lain2_nama']) # BP2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59093", data['val_lokal_lain2_tgl']) # BQ2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59149", data['val_lokal_lain2_wkt']) # BR2 (wkt)
-                                        # set_text(driver, "itemid_59150", data['val_lokal_lain2_hr']) # BS2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59150", data['val_lokal_lain2_hr']) # BS2 (hari)
                                 # BT2 -> form_group_59086 >>> lain-lain 3
                                 if set_radio(driver, "form_group_59086", data['val_lokal_lain3']):
                                     if str(data['val_lokal_lain3']).strip() == "1":
-                                        set_text(driver, "itemid_59095", data['val_lokal_lain3_nama']) # BU2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59096", data['val_lokal_lain3_tgl']) # BV2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59095", data['val_lokal_lain3_nama']) # BU2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59096", data['val_lokal_lain3_tgl']) # BV2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59151", data['val_lokal_lain3_wkt']) # BW2 (wkt)
-                                        # set_text(driver, "itemid_59152", data['val_lokal_lain3_hr']) # BX2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59152", data['val_lokal_lain3_hr']) # BX2 (hari)
                                 # BY2 -> form_group_59087 >>> lain-lain 4
                                 if set_radio(driver, "form_group_59087", data['val_lokal_lain4']):
                                     if str(data['val_lokal_lain4']).strip() == "1":
-                                        set_text(driver, "itemid_59098", data['val_lokal_lain4_nama']) # BZ2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59099", data['val_lokal_lain4_tgl']) # CA2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59098", data['val_lokal_lain4_nama']) # BZ2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59099", data['val_lokal_lain4_tgl']) # CA2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59153", data['val_lokal_lain4_wkt']) # CB2 (wkt)
-                                        # set_text(driver, "itemid_59154", data['val_lokal_lain4_hr']) # CC2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59154", data['val_lokal_lain4_hr']) # CC2 (hari)
 
                 # CD2 -> form_group_58781 >>> SISTEMIK
                 if set_radio(driver, "form_group_58781", data['val_sistemik']):
@@ -268,23 +268,23 @@ try:
                         set_radio(driver, "form_group_58795", data['val_demam'])
                         # if set_radio(driver, "form_group_58795", data['val_demam']):
                         #     if str(data['val_demam']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58808", data['val_demam_tgl']) # CF2 (tgl)
+                        #         isi_date(driver, wait_short, "itemid_58808", data['val_demam_tgl']) # CF2 (tgl)
                         #         isi_time(driver, wait_short, "itemid_58809", data['val_demam_wkt']) # CG2 (wkt)
-                        #         set_text(driver, "itemid_58851", data['val_demam_hr']) # CH2 (hari)
+                        #         isi_textinput(driver, wait_short, "itemid_58851", data['val_demam_hr']) # CH2 (hari)
                         # CI2 -> form_group_58796 >>> REWEL
                         set_radio(driver, "form_group_58796", data['val_rewel'])
                         # if set_radio(driver, "form_group_58796", data['val_rewel']):
                         #     if str(data['val_rewel']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58811", data['val_rewel_tgl']) # CF2 (tgl)
+                        #         isi_date(driver, wait_short, "itemid_58811", data['val_rewel_tgl']) # CF2 (tgl)
                         #         isi_time(driver, wait_short, "itemid_58828", data['val_rewel_wkt']) # CG2 (wkt)
-                        #         set_text(driver, "itemid_58852", data['val_rewel_hr']) # CH2 (hari)
+                        #         isi_textinput(driver, wait_short, "itemid_58852", data['val_rewel_hr']) # CH2 (hari)
                         # CM2 -> form_group_58797 >>> NANGIS
                         set_radio(driver, "form_group_58797", data['val_nangis'])
                         # if set_radio(driver, "form_group_58797", data['val_nangis']):
                         #     if str(data['val_nangis']).strip() == "1":
-                        #         isi_datepicker(driver, wait_short, "itemid_58813", data['val_nangis_tgl']) # CF2 (tgl)
+                        #         isi_date(driver, wait_short, "itemid_58813", data['val_nangis_tgl']) # CF2 (tgl)
                         #         isi_time(driver, wait_short, "itemid_58830", data['val_nangis_wkt']) # CG2 (wkt)
-                        #         set_text(driver, "itemid_58853", data['val_nangis_hr']) # CH2 (hari)
+                        #         isi_textinput(driver, wait_short, "itemid_58853", data['val_nangis_hr']) # CH2 (hari)
                         # CQ2 -> form_group_58807 >>> LAIN-LAIN
                         if set_radio(driver, "form_group_58807", data['val_sistemik_lain']):
                             if str(data['val_sistemik_lain']).strip() == "1":
@@ -292,31 +292,31 @@ try:
                                 # CR2 -> form_group_59129 >>> lain-lain 1
                                 if set_radio(driver, "form_group_59129", data['val_sistemik_lain_1']):
                                     if str(data['val_sistemik_lain_1']).strip() == "1":
-                                        set_text(driver, "itemid_59113", data['val_sistemik_lain_1_nama']) # CS2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59114", data['val_sistemik_lain_1_tgl']) # CT2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59113", data['val_sistemik_lain_1_nama']) # CS2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59114", data['val_sistemik_lain_1_tgl']) # CT2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59141", data['val_sistemik_lain_1_wkt']) # CU2 (wkt)
-                                        # set_text(driver, "itemid_59142", data['val_sistemik_lain_1_hr']) # CV2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59142", data['val_sistemik_lain_1_hr']) # CV2 (hari)
                                 # CW2 -> form_group_59130 >>> lain-lain 2
                                 if set_radio(driver, "form_group_59130", data['val_sistemik_lain_2']):
                                     if str(data['val_sistemik_lain_2']).strip() == "1":
-                                        set_text(driver, "itemid_59116", data['val_sistemik_lain_2_nama']) # CX2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59117", data['val_sistemik_lain_2_tgl']) # CY2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59116", data['val_sistemik_lain_2_nama']) # CX2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59117", data['val_sistemik_lain_2_tgl']) # CY2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59143", data['val_sistemik_lain_2_wkt']) # CZ2 (wkt)
-                                        # set_text(driver, "itemid_59144", data['val_sistemik_lain_2_hr']) # DA2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59144", data['val_sistemik_lain_2_hr']) # DA2 (hari)
                                 # DB2 -> form_group_59131 >>> lain-lain 3
                                 if set_radio(driver, "form_group_59131", data['val_sistemik_lain_3']):
                                     if str(data['val_sistemik_lain_3']).strip() == "1":
-                                        set_text(driver, "itemid_59119", data['val_sistemik_lain_3_nama']) # DC2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59120", data['val_sistemik_lain_3_tgl']) # DD2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59119", data['val_sistemik_lain_3_nama']) # DC2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59120", data['val_sistemik_lain_3_tgl']) # DD2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59145", data['val_sistemik_lain_3_wkt']) # DE2 (wkt)
-                                        # set_text(driver, "itemid_59146", data['val_sistemik_lain_3_hr']) # DF2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59146", data['val_sistemik_lain_3_hr']) # DF2 (hari)
                                 # DG2 -> form_group_59132 >>> lain-lain 4
                                 if set_radio(driver, "form_group_59132", data['val_sistemik_lain_4']):
                                     if str(data['val_sistemik_lain_4']).strip() == "1":
-                                        set_text(driver, "itemid_59122", data['val_sistemik_lain_4_nama']) # DH2 (nama)
-                                        # isi_datepicker(driver, wait_short, "itemid_59123", data['val_sistemik_lain_4_tgl']) # DI2 (tgl)
+                                        isi_textinput(driver, wait_short, "itemid_59122", data['val_sistemik_lain_4_nama']) # DH2 (nama)
+                                        # isi_date(driver, wait_short, "itemid_59123", data['val_sistemik_lain_4_tgl']) # DI2 (tgl)
                                         # isi_time(driver, wait_short, "itemid_59147", data['val_sistemik_lain_4_wkt']) # DJ2 (wkt)
-                                        # set_text(driver, "itemid_59148", data['val_sistemik_lain_4_hr']) # DK2 (hari)
+                                        # isi_textinput(driver, wait_short, "itemid_59148", data['val_sistemik_lain_4_hr']) # DK2 (hari)
                 # DL2 -> form_group_58827 >> SEMBUH
                 set_radio(driver, "form_group_58827", data['val_kondisi_akhir'])
         except Exception as e:
@@ -364,5 +364,6 @@ except KeyboardInterrupt:
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
     exit() 
+
 
 
