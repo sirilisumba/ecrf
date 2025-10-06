@@ -478,7 +478,7 @@ try:
 
     # >>>> Lanjut ke file ecrf1.py secara otomatis <<<<
     print("▶️  Continue next nomor inklusi...")
-    subprocess.run(["python", "ecrf1.py"])
+    subprocess.run(["python", "form1.py"])
 
 
 except KeyboardInterrupt:
@@ -486,3 +486,4 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
