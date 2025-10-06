@@ -237,7 +237,7 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openvaksinasi.py secara otomatis <<<<
-    subprocess.run(["python", "vaksinasi.py"])
+    subprocess.run(["python", "formvaksinasi.py"])
 
 
 except KeyboardInterrupt:
@@ -245,4 +245,5 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
