@@ -365,7 +365,7 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file Loop1 secara otomatis <<<<
-    subprocess.run(["python", "ecrfv1-1.py"])
+    subprocess.run(["python", "ecrfv2-1.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Proses dihentikan user.")
@@ -374,5 +374,6 @@ except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
     play_sound()
     exit() 
+
 
 
