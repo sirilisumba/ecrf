@@ -344,7 +344,7 @@ def jalankan_script(attempt=1, max_attempts=3):
             #     print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
             # # >>>> Lanjut ke file Loop1 secara otomatis <<<<
-            subprocess.run(["python", "ecrfv1-2.py"])
+            subprocess.run(["python", "ecrfv2-2.py"])
             
         except KeyboardInterrupt:
             print("\n⏹️ Proses dihentikan user.")
@@ -401,4 +401,5 @@ def jalankan_script(attempt=1, max_attempts=3):
 
 if __name__ == "__main__":
     jalankan_script()
+
 
