@@ -147,11 +147,12 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openpelapor.py secara otomatis <<<<
-    subprocess.run(["python", "ecrf2.py"])
+    subprocess.run(["python", "formpelapor.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
