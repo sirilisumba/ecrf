@@ -202,11 +202,12 @@ try:
         print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file openpasien.py secara otomatis <<<<
-    subprocess.run(["python", "pasien.py"])
+    subprocess.run(["python", "formpasien.py"])
 
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
