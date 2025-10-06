@@ -355,14 +355,14 @@ try:
     ########## LANJUT KE FORM BERIKUTNYA ##########
     ###############################################
 
-    jawaban = input("➡️  Lanjut data berikutnya? (Y/N): ").strip().lower()
-    if jawaban == 'y':
-        print("▶️  Next data...")
-    elif jawaban == 'n':
-        print("⏹️ Proses dihentikan user.")
-        exit()
-    else:
-        print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
+    # jawaban = input("➡️  Lanjut data berikutnya? (Y/N): ").strip().lower()
+    # if jawaban == 'y':
+    #     print("▶️  Next data...")
+    # elif jawaban == 'n':
+    #     print("⏹️ Proses dihentikan user.")
+    #     exit()
+    # else:
+    #     print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
     # >>>> Lanjut ke file Loop1 secara otomatis <<<<
     subprocess.run(["python", "ecrfv2-1.py"])
@@ -374,6 +374,7 @@ except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
     play_sound()
     exit() 
+
 
 
 
