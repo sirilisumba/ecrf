@@ -1,4 +1,4 @@
-import openpyxl
+    import openpyxl
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -276,29 +276,33 @@ try:
                     if str(val_lokal).strip() == "1":
                         time.sleep(0.25)
                         # AS2 -> form_group_58767 >>> NYERI LOKAL
-                        if set_radio(driver, "form_group_58767", val_nyeri):
-                            if str(val_nyeri).strip() == "1":
-                                set_date(driver, "itemid_58772", val_lokal_tgl) # AT2 (tgl)
-                                set_time(driver, "itemid_58773", val_lokal_wkt) # AU2 (wkt)
-                                set_text(driver, "itemid_58846", val_lokal_hr) # AV2 (hari)
+                        set_radio(driver, "form_group_58767", val_nyeri)
+                        # if set_radio(driver, "form_group_58767", val_nyeri):
+                        #     if str(val_nyeri).strip() == "1":
+                        #         set_date(driver, "itemid_58772", val_lokal_tgl) # AT2 (tgl)
+                        #         set_time(driver, "itemid_58773", val_lokal_wkt) # AU2 (wkt)
+                        #         set_text(driver, "itemid_58846", val_lokal_hr) # AV2 (hari)
                         # AW2 -> form_group_58768 >>> KEMERAHAN
-                        if set_radio(driver, "form_group_58768", val_merah):
-                            if str(val_merah).strip() == "1":
-                                set_date(driver, "itemid_58775", val_merah_tgl) # AX2 (tgl)
-                                set_time(driver, "itemid_58799", val_merah_wkt) # AY2 (wkt)
-                                set_text(driver, "itemid_58847", val_merah_hr) # AZ2 (hari)
+                        set_radio(driver, "form_group_58768", val_merah)
+                        # if set_radio(driver, "form_group_58768", val_merah):
+                        #     if str(val_merah).strip() == "1":
+                        #         set_date(driver, "itemid_58775", val_merah_tgl) # AX2 (tgl)
+                        #         set_time(driver, "itemid_58799", val_merah_wkt) # AY2 (wkt)
+                        #         set_text(driver, "itemid_58847", val_merah_hr) # AZ2 (hari)
                         # BA2 -> form_group_58769 >>> PENEBALAN
-                        if set_radio(driver, "form_group_58769", val_tebal):
-                            if str(val_tebal).strip() == "1":
-                                set_date(driver, "itemid_58777", val_tebal_tgl) # BB2 (tgl)
-                                set_time(driver, "itemid_58801", val_tebal_wkt) # BC2 (wkt)
-                                set_text(driver, "itemid_58848", val_tebal_hr) # BD2 (hari)
+                        set_radio(driver, "form_group_58769", val_tebal)
+                        # if set_radio(driver, "form_group_58769", val_tebal):
+                        #     if str(val_tebal).strip() == "1":
+                        #         set_date(driver, "itemid_58777", val_tebal_tgl) # BB2 (tgl)
+                        #         set_time(driver, "itemid_58801", val_tebal_wkt) # BC2 (wkt)
+                        #         set_text(driver, "itemid_58848", val_tebal_hr) # BD2 (hari)
                         # BE2 -> form_group_58770 >>> PEMBENGKAKAN
-                        if set_radio(driver, "form_group_58770", val_bengkak):
-                            if str(val_bengkak).strip() == "1":
-                                set_date(driver, "itemid_58779", val_bengkak_tgl) # BF2 (tgl)
-                                set_time(driver, "itemid_58803", val_bengkak_wkt) # BG2 (wkt)
-                                set_text(driver, "itemid_58849", val_bengkak_hr) # BH2 (hari)
+                        set_radio(driver, "form_group_58770", val_bengkak)
+                        # if set_radio(driver, "form_group_58770", val_bengkak):
+                        #     if str(val_bengkak).strip() == "1":
+                        #         set_date(driver, "itemid_58779", val_bengkak_tgl) # BF2 (tgl)
+                        #         set_time(driver, "itemid_58803", val_bengkak_wkt) # BG2 (wkt)
+                        #         set_text(driver, "itemid_58849", val_bengkak_hr) # BH2 (hari)
                         # BI2 -> form_group_58782 >>> LAIN-LAIN
                         if set_radio(driver, "form_group_58782", val_lokal_lain):
                             if str(val_lokal_lain).strip() == "1":
@@ -307,53 +311,56 @@ try:
                                 if set_radio(driver, "form_group_59084", val_lokal_lain1):
                                     if str(val_lokal_lain1).strip() == "1":
                                         set_text(driver, "itemid_59088", val_lokal_lain1_nama) # BK2 (nama)
-                                        set_date(driver, "itemid_59089", val_lokal_lain1_tgl) # BL2 (tgl)
-                                        set_time(driver, "itemid_59090", val_lokal_lain1_wkt) # BM2 (wkt)
-                                        set_text(driver, "itemid_59091", val_lokal_lain1_hr) # BN2 (hari)
+                                        # set_date(driver, "itemid_59089", val_lokal_lain1_tgl) # BL2 (tgl)
+                                        # set_time(driver, "itemid_59090", val_lokal_lain1_wkt) # BM2 (wkt)
+                                        # set_text(driver, "itemid_59091", val_lokal_lain1_hr) # BN2 (hari)
                                 # BO2 -> form_group_59085 >>> lain-lain 2
                                 if set_radio(driver, "form_group_59085", val_lokal_lain2):
                                     if str(val_lokal_lain2).strip() == "1":
                                         set_text(driver, "itemid_59092", val_lokal_lain2_nama) # BP2 (nama)
-                                        set_date(driver, "itemid_59093", val_lokal_lain2_tgl) # BQ2 (tgl)
-                                        set_time(driver, "itemid_59149", val_lokal_lain2_wkt) # BR2 (wkt)
-                                        set_text(driver, "itemid_59150", val_lokal_lain2_hr) # BS2 (hari)
+                                        # set_date(driver, "itemid_59093", val_lokal_lain2_tgl) # BQ2 (tgl)
+                                        # set_time(driver, "itemid_59149", val_lokal_lain2_wkt) # BR2 (wkt)
+                                        # set_text(driver, "itemid_59150", val_lokal_lain2_hr) # BS2 (hari)
                                 # BT2 -> form_group_59086 >>> lain-lain 3
                                 if set_radio(driver, "form_group_59086", val_lokal_lain3):
                                     if str(val_lokal_lain3).strip() == "1":
                                         set_text(driver, "itemid_59095", val_lokal_lain3_nama) # BU2 (nama)
-                                        set_date(driver, "itemid_59096", val_lokal_lain3_tgl) # BV2 (tgl)
-                                        set_time(driver, "itemid_59151", val_lokal_lain3_wkt) # BW2 (wkt)
-                                        set_text(driver, "itemid_59152", val_lokal_lain3_hr) # BX2 (hari)
+                                        # set_date(driver, "itemid_59096", val_lokal_lain3_tgl) # BV2 (tgl)
+                                        # set_time(driver, "itemid_59151", val_lokal_lain3_wkt) # BW2 (wkt)
+                                        # set_text(driver, "itemid_59152", val_lokal_lain3_hr) # BX2 (hari)
                                 # BY2 -> form_group_59087 >>> lain-lain 4
                                 if set_radio(driver, "form_group_59087", val_lokal_lain4):
                                     if str(val_lokal_lain4).strip() == "1":
                                         set_text(driver, "itemid_59098", val_lokal_lain4_nama) # BZ2 (nama)
-                                        set_date(driver, "itemid_59099", val_lokal_lain4_tgl) # CA2 (tgl)
-                                        set_time(driver, "itemid_59153", val_lokal_lain4_wkt) # CB2 (wkt)
-                                        set_text(driver, "itemid_59154", val_lokal_lain4_hr) # CC2 (hari)
+                                        # set_date(driver, "itemid_59099", val_lokal_lain4_tgl) # CA2 (tgl)
+                                        # set_time(driver, "itemid_59153", val_lokal_lain4_wkt) # CB2 (wkt)
+                                        # set_text(driver, "itemid_59154", val_lokal_lain4_hr) # CC2 (hari)
 
                 # CD2 -> form_group_58781 >>> SISTEMIK
                 if set_radio(driver, "form_group_58781", val_sistemik):
                     if str(val_sistemik).strip() == "1":
                         time.sleep(0.25)
                         # CE2 -> form_group_58795 >>> DEMAM
-                        if set_radio(driver, "form_group_58795", val_demam):
-                            if str(val_demam).strip() == "1":
-                                set_date(driver, "itemid_58808", val_demam_tgl) # CF2 (tgl)
-                                set_time(driver, "itemid_58809", val_demam_wkt) # CG2 (wkt)
-                                set_text(driver, "itemid_58851", val_demam_hr) # CH2 (hari)
+                        set_radio(driver, "form_group_58795", val_demam)
+                        # if set_radio(driver, "form_group_58795", val_demam):
+                        #     if str(val_demam).strip() == "1":
+                        #         set_date(driver, "itemid_58808", val_demam_tgl) # CF2 (tgl)
+                        #         set_time(driver, "itemid_58809", val_demam_wkt) # CG2 (wkt)
+                        #         set_text(driver, "itemid_58851", val_demam_hr) # CH2 (hari)
                         # CI2 -> form_group_58796 >>> REWEL
-                        if set_radio(driver, "form_group_58796", val_rewel):
-                            if str(val_rewel).strip() == "1":
-                                set_date(driver, "itemid_58811", val_rewel_tgl) # CF2 (tgl)
-                                set_time(driver, "itemid_58828", val_rewel_wkt) # CG2 (wkt)
-                                set_text(driver, "itemid_58852", val_rewel_hr) # CH2 (hari)
+                        set_radio(driver, "form_group_58796", val_rewel)
+                        # if set_radio(driver, "form_group_58796", val_rewel):
+                        #     if str(val_rewel).strip() == "1":
+                        #         set_date(driver, "itemid_58811", val_rewel_tgl) # CF2 (tgl)
+                        #         set_time(driver, "itemid_58828", val_rewel_wkt) # CG2 (wkt)
+                        #         set_text(driver, "itemid_58852", val_rewel_hr) # CH2 (hari)
                         # CM2 -> form_group_58797 >>> NANGIS
-                        if set_radio(driver, "form_group_58797", val_nangis):
-                            if str(val_nangis).strip() == "1":
-                                set_date(driver, "itemid_58813", val_nangis_tgl) # CF2 (tgl)
-                                set_time(driver, "itemid_58830", val_nangis_wkt) # CG2 (wkt)
-                                set_text(driver, "itemid_58853", val_nangis_hr) # CH2 (hari)
+                        set_radio(driver, "form_group_58797", val_nangis)
+                        # if set_radio(driver, "form_group_58797", val_nangis):
+                        #     if str(val_nangis).strip() == "1":
+                        #         set_date(driver, "itemid_58813", val_nangis_tgl) # CF2 (tgl)
+                        #         set_time(driver, "itemid_58830", val_nangis_wkt) # CG2 (wkt)
+                        #         set_text(driver, "itemid_58853", val_nangis_hr) # CH2 (hari)
                         # CQ2 -> form_group_58807 >>> LAIN-LAIN
                         if set_radio(driver, "form_group_58807", val_sistemik_lain):
                             if str(val_sistemik_lain).strip() == "1":
@@ -362,30 +369,30 @@ try:
                                 if set_radio(driver, "form_group_59129", val_sistemik_lain_1):
                                     if str(val_sistemik_lain_1).strip() == "1":
                                         set_text(driver, "itemid_59113", val_sistemik_lain_1_nama) # CS2 (nama)
-                                        set_date(driver, "itemid_59114", val_sistemik_lain_1_tgl) # CT2 (tgl)
-                                        set_time(driver, "itemid_59141", val_sistemik_lain_1_wkt) # CU2 (wkt)
-                                        set_text(driver, "itemid_59142", val_sistemik_lain_1_hr) # CV2 (hari)
+                                        # set_date(driver, "itemid_59114", val_sistemik_lain_1_tgl) # CT2 (tgl)
+                                        # set_time(driver, "itemid_59141", val_sistemik_lain_1_wkt) # CU2 (wkt)
+                                        # set_text(driver, "itemid_59142", val_sistemik_lain_1_hr) # CV2 (hari)
                                 # CW2 -> form_group_59130 >>> lain-lain 2
                                 if set_radio(driver, "form_group_59130", val_sistemik_lain_2):
                                     if str(val_sistemik_lain_2).strip() == "1":
                                         set_text(driver, "itemid_59116", val_sistemik_lain_2_nama) # CX2 (nama)
-                                        set_date(driver, "itemid_59117", val_sistemik_lain_2_tgl) # CY2 (tgl)
-                                        set_time(driver, "itemid_59143", val_sistemik_lain_2_wkt) # CZ2 (wkt)
-                                        set_text(driver, "itemid_59144", val_sistemik_lain_2_hr) # DA2 (hari)
+                                        # set_date(driver, "itemid_59117", val_sistemik_lain_2_tgl) # CY2 (tgl)
+                                        # set_time(driver, "itemid_59143", val_sistemik_lain_2_wkt) # CZ2 (wkt)
+                                        # set_text(driver, "itemid_59144", val_sistemik_lain_2_hr) # DA2 (hari)
                                 # DB2 -> form_group_59131 >>> lain-lain 3
                                 if set_radio(driver, "form_group_59131", val_sistemik_lain_3):
                                     if str(val_sistemik_lain_3).strip() == "1":
                                         set_text(driver, "itemid_59119", val_sistemik_lain_3_nama) # DC2 (nama)
-                                        set_date(driver, "itemid_59120", val_sistemik_lain_3_tgl) # DD2 (tgl)
-                                        set_time(driver, "itemid_59145", val_sistemik_lain_3_wkt) # DE2 (wkt)
-                                        set_text(driver, "itemid_59146", val_sistemik_lain_3_hr) # DF2 (hari)
+                                        # set_date(driver, "itemid_59120", val_sistemik_lain_3_tgl) # DD2 (tgl)
+                                        # set_time(driver, "itemid_59145", val_sistemik_lain_3_wkt) # DE2 (wkt)
+                                        # set_text(driver, "itemid_59146", val_sistemik_lain_3_hr) # DF2 (hari)
                                 # DG2 -> form_group_59132 >>> lain-lain 4
                                 if set_radio(driver, "form_group_59132", val_sistemik_lain_4):
                                     if str(val_sistemik_lain_4).strip() == "1":
                                         set_text(driver, "itemid_59122", val_sistemik_lain_4_nama) # DH2 (nama)
-                                        set_date(driver, "itemid_59123", val_sistemik_lain_4_tgl) # DI2 (tgl)
-                                        set_time(driver, "itemid_59147", val_sistemik_lain_4_wkt) # DJ2 (wkt)
-                                        set_text(driver, "itemid_59148", val_sistemik_lain_4_hr) # DK2 (hari)
+                                        # set_date(driver, "itemid_59123", val_sistemik_lain_4_tgl) # DI2 (tgl)
+                                        # set_time(driver, "itemid_59147", val_sistemik_lain_4_wkt) # DJ2 (wkt)
+                                        # set_text(driver, "itemid_59148", val_sistemik_lain_4_hr) # DK2 (hari)
                 # DL2 -> form_group_58827 >> SEMBUH
                 set_radio(driver, "form_group_58827", val_kondisi_akhir)
         except Exception as e:
@@ -486,4 +493,5 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
