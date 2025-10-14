@@ -29,8 +29,8 @@ try:
     print("Data dari Excel:", data['val_no_inklusi'], data['val_inisial'], data['val_provinsi'], data['val_tgl_lapor'], data['val_hasPengobatan'])
 
     # Isi form
-    # set_text(driver, "itemid_58832", data['val_no_inklusi'])
-    # set_text(driver, "itemid_58833", data['val_inisial'])
+    set_text(driver, "itemid_58832", data['val_no_inklusi'])
+    set_text(driver, "itemid_58833", data['val_inisial'])
 
     # Radio button Provinsi
     try:
@@ -76,8 +76,8 @@ try:
     print("Data dari Excel:", data['val_no_inklusi'], data['val_inisial'], data['val_jeniskelamin'], data['val_tgllahir'], data['val_usia_thn'], data['val_usia_bln'], data['val_usia_hr'], data['val_hasPengobatan'])
 
     # Isi form
-    # set_text(driver, "itemid_58337", data['val_no_inklusi'])
-    # set_text(driver, "itemid_58338", data['val_inisial'])
+    set_text(driver, "itemid_58337", data['val_no_inklusi'])
+    set_text(driver, "itemid_58338", data['val_inisial'])
     set_radio(driver, "form_group_58340", data['val_jeniskelamin'])
 
     try:
@@ -90,7 +90,7 @@ try:
         print("❌ GAGAL to select radio form_group_58340:", e)
         play_sound()
 
-    # isi_datepicker(driver, wait_short, "itemid_59060", data['val_tgllahir'])
+    isi_datepicker(driver, wait_short, "itemid_59060", data['val_tgllahir'])
     set_text(driver, "itemid_59061", data['val_usia_thn'])
     set_text(driver, "itemid_59062", data['val_usia_bln'])
     set_text(driver, "itemid_59063", data['val_usia_hr'])
@@ -120,8 +120,8 @@ try:
     print("Data dari Excel:", data['val_no_inklusi'], data['val_inisial'], data['val_jenis_vaksin'], data['val_manufaktur'], data['val_no_batch'], data['val_dosis'], data['val_tgl_vaksin'], data['val_wkt_vaksin'], data['val_tempat_vaksin'], data['val_vaksin_lain'], data['val_vaksin_lain1'], data['val_vaksin_lain2'], data['val_vaksin_lain3'], data['val_tgl_vaksin'], data['val_haspengobatan'])
 
     # Isi form
-    # set_text(driver, "itemid_60292", data['val_no_inklusi'])
-    # set_text(driver, "itemid_60293", data['val_inisial'])
+    set_text(driver, "itemid_60292", data['val_no_inklusi'])
+    set_text(driver, "itemid_60293", data['val_inisial'])
     set_radio(driver, "form_group_60294", data['val_jenis_vaksin'])
     set_radio(driver, "form_group_60295", data['val_manufaktur'])
     set_text(driver, "itemid_60296", data['val_no_batch'])
@@ -193,9 +193,9 @@ try:
           data['val_sistemik_lain_4_hr'], data['val_kondisi_akhir'], data['val_hasPengobatan'])
     
     # Isi form
-    # wait_short.until(EC.presence_of_element_located((By.ID, "itemid_58646")))
-    # set_text(driver, "itemid_58646", data['val_no_inklusi'])
-    # set_text(driver, "itemid_58647", data['val_inisial'])
+    wait_short.until(EC.presence_of_element_located((By.ID, "itemid_58646")))
+    set_text(driver, "itemid_58646", data['val_no_inklusi'])
+    set_text(driver, "itemid_58647", data['val_inisial'])
 
     if set_radio(driver, "form_group_58650", data['val_kategori']):
         # only handle nested block if value == 2
@@ -374,6 +374,7 @@ except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
     play_sound()
     exit() 
+
 
 
 
