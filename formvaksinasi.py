@@ -143,8 +143,8 @@ try:
             return None
 
     # text inputs
-    # set_text(driver, wait, "itemid_60292", val_no_inklusi)
-    # set_text(driver, wait, "itemid_60293", val_inisial)
+    set_text(driver, wait, "itemid_60292", val_no_inklusi)
+    set_text(driver, wait, "itemid_60293", val_inisial)
 
     # radios
     def set_radio(group_id, value):
@@ -319,3 +319,4 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
