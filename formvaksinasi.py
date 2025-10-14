@@ -299,24 +299,26 @@ try:
     #     time.sleep(0.5)
     #
     #
+    
     # Loop ke file openkipi.py
-    jawaban = input("➡️  Continue to FORM KIPI? (Y/N): ").strip().lower()
+    # jawaban = input("➡️  Continue to FORM KIPI? (Y/N): ").strip().lower()
 
-    if jawaban == 'y':
-        print("▶️  Continue to next form...")
-        # lanjutkan script
-    elif jawaban == 'n':
-        print("⏹️ Process stop by user.")
-        exit()
-    else:
-        print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
+    # if jawaban == 'y':
+    #     print("▶️  Continue to next form...")
+    #     # lanjutkan script
+    # elif jawaban == 'n':
+    #     print("⏹️ Process stop by user.")
+    #     exit()
+    # else:
+    #     print("⚠️  Unrecognized. Please tap Y or N on your keyboard.")
 
-    # >>>> Lanjut ke file openkipi.py secara otomatis <<<<
-    subprocess.run(["python", "formkipi.py"])
-
+    # # >>>> Lanjut ke file openkipi.py secara otomatis <<<<
+    # subprocess.run(["python", "formkipi.py"])
+    exit()
 except KeyboardInterrupt:
     print("\n⏹️ Kill process by user.")
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
