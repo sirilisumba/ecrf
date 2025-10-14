@@ -99,8 +99,8 @@ try:
 
     # -------- Isi form --------
     # input("Lanjut isi formulir?")
-    # set_text(driver, wait, "itemid_58337", val_no_inklusi) # no_inklusi
-    # set_text(driver, wait, "itemid_58338", val_inisial) # inisial
+    set_text(driver, wait, "itemid_58337", val_no_inklusi) # no_inklusi
+    set_text(driver, wait, "itemid_58338", val_inisial) # inisial
 
     # Radio form_group_58340
     try:
@@ -113,21 +113,21 @@ try:
         print("❌ FAILED to select radio form_group_58340:", e)
 
     # Datepicker itemid_59060 -> dd-mm-YYYY, then close datepicker
-    # try:
-    #     if val_tgllahir is not None and str(val_tgllahir).strip() != "":
-    #         formatted = format_tanggal_ddmmyyyy(val_tgllahir)
-    #         field = driver.find_element(By.ID, "itemid_59060")
-    #         # set value via JS + dispatch input/change so page frameworks notice
-    #         driver.execute_script(
-    #             "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('input')); arguments[0].dispatchEvent(new Event('change'));",
-    #             field, formatted
-    #         )
-    #         time.sleep(0.15)
-    #         # close any datepicker by moving focus (TAB)
-    #         field.send_keys(Keys.TAB)
-    #         print("→ itemid_59060 =", formatted)
-    # except Exception as e:
-    #     print("❌ FAILED to set itemid_59060:", e)
+    try:
+        if val_tgllahir is not None and str(val_tgllahir).strip() != "":
+            formatted = format_tanggal_ddmmyyyy(val_tgllahir)
+            field = driver.find_element(By.ID, "itemid_59060")
+            # set value via JS + dispatch input/change so page frameworks notice
+            driver.execute_script(
+                "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('input')); arguments[0].dispatchEvent(new Event('change'));",
+                field, formatted
+            )
+            time.sleep(0.15)
+            # close any datepicker by moving focus (TAB)
+            field.send_keys(Keys.TAB)
+            print("→ itemid_59060 =", formatted)
+    except Exception as e:
+        print("❌ FAILED to set itemid_59060:", e)
 
     # itemid_59061 (text)
     try:
@@ -245,3 +245,4 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
