@@ -77,8 +77,8 @@ try:
     print("Data dari Excel:", data['val_no_inklusi'], data['val_inisial'], data['val_jeniskelamin'], data['val_tgllahir'], data['val_usia_thn'], data['val_usia_bln'], data['val_usia_hr'], data['val_hasPengobatan'])
 
     # Isi form
-    # set_text(driver, "itemid_58337", data['val_no_inklusi'])
-    # set_text(driver, "itemid_58338", data['val_inisial'])
+    set_text(driver, "itemid_58337", data['val_no_inklusi'])
+    set_text(driver, "itemid_58338", data['val_inisial'])
     set_radio(driver, "form_group_58340", data['val_jeniskelamin'])
 
     try:
@@ -91,7 +91,7 @@ try:
         print("❌ GAGAL to select radio form_group_58340:", e)
         play_sound()
 
-    # isi_datepicker(driver, wait_short, "itemid_59060", data['val_tgllahir'])
+    isi_datepicker(driver, wait_short, "itemid_59060", data['val_tgllahir'])
     set_text(driver, "itemid_59061", data['val_usia_thn'])
     set_text(driver, "itemid_59062", data['val_usia_bln'])
     set_text(driver, "itemid_59063", data['val_usia_hr'])
@@ -195,7 +195,7 @@ try:
           )
     
     # Isi form
-    # wait_short.until(EC.presence_of_element_located((By.ID, "itemid_58646")))
+    wait_short.until(EC.presence_of_element_located((By.ID, "itemid_58646")))
     set_text(driver, "itemid_58646", data['val_no_inklusi'])
     set_text(driver, "itemid_58647", data['val_inisial'])
 
@@ -381,5 +381,6 @@ except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
     play_sound()
     exit() 
+
 
 
