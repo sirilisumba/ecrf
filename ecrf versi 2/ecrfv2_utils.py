@@ -152,6 +152,10 @@ def load_excel_data(path=EXCEL_PATH, sheet_name=None, row_num=EXCEL_ROW):
         "val_sistemik_lain_4_wkt"   : ws["CW3"].value,
         "val_sistemik_lain_4_hr"    : ws["CX3"].value,
         "val_kondisi_akhir"         : ws["CY3"].value,
+        "val_diagnosis_1"           : ws["CZ3"].value,
+        "val_diagnosis_2"           : ws["DA3"].value,
+        "val_diagnosis_3"           : ws["DB3"].value,
+        "val_kausalitas"            : ws["DC3"].value,
     }
     return data
 
@@ -447,5 +451,6 @@ def isi_date_indo(driver, wait_short, element_id, tgl_excel):
     except Exception as e:
         print(f"❌ GAGAL mengisi datepicker {element_id}: {e}")
         return False
+
 
 
