@@ -261,8 +261,8 @@ try:
 
     # ---------- Fill form ----------
     # text fields
-    # set_text(driver, "itemid_58646", val_no_inklusi)  # no_inklusi
-    # set_text(driver, "itemid_58647", val_inisial)  # inisial
+    set_text(driver, "itemid_58646", val_no_inklusi)  # no_inklusi
+    set_text(driver, "itemid_58647", val_inisial)  # inisial
 
     # main radio group 58650 >>> Kategori KIPI Serius atau Non Serius: 
     if set_radio(driver, "form_group_58650", val_kategori):
@@ -493,5 +493,6 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
 
