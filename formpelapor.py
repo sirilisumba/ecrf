@@ -94,8 +94,8 @@ try:
     # --- Isi form ---
 
     # Text input itemid_58832
-    # set_text(driver, wait, "itemid_58832", val_no_inklusi)
-    # set_text(driver, wait, "itemid_58833", val_inisial)
+    set_text(driver, wait, "itemid_58832", val_no_inklusi)
+    set_text(driver, wait, "itemid_58833", val_inisial)
 
     # Radio button form_group_58835
     try:
@@ -209,3 +209,4 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
