@@ -13,7 +13,7 @@ import time
 import datetime
 import winsound
 
-EXCEL_PATH = "data2.xlsx"
+EXCEL_PATH = "data.xlsx"
 EXCEL_ROW = 3
 
 def create_driver(debugger_address="127.0.0.1:9222", chromedriver_path="chromedriver.exe", wait_long=30, wait_short=10):
@@ -811,5 +811,6 @@ def isi_date_indo(driver, wait_short, element_id, tgl_excel, delay=0.3, timeout=
     except Exception as e:
         print(f"❌ GAGAL mengisi datepicker {element_id}: {e}")
         return False
+
 
 
