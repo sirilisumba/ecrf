@@ -9,7 +9,7 @@ from ecrfv2_utils import create_driver, EXCEL_PATH, buka_form, load_excel_data, 
 
 driver, wait_long, wait_short = create_driver()
 data = load_excel_data()
-# file_path = "data2.xlsx"
+# file_path = "data.xlsx"
 wb = load_workbook(EXCEL_PATH)
 ws = wb.active
 
@@ -293,5 +293,6 @@ except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
     play_sound()
     exit() 
+
 
 
