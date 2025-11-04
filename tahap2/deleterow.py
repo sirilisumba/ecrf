@@ -4,7 +4,7 @@ try:
     
     # --- file deleterow.py
     # Buka file Excel
-    file_path = "data.xlsx"
+    file_path = "data2.xlsx"
     wb = load_workbook(file_path)
     ws = wb.active
 
@@ -24,5 +24,6 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(f"\n❌ An unhandled exception occurred: {e}")
+
 
 
