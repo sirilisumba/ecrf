@@ -157,19 +157,19 @@ try:
         exit()
 
     # --- tunggu tombol VERIFY muncul ---
-    # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-    # # scroll ke tombol dan klik
-    # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-    # time.sleep(0.2)
-    # driver.execute_script("arguments[0].click();", verify_btn)
-    # print("✅ Tombol VERIFY berhasil diklik")
+    verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+    # scroll ke tombol dan klik
+    driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+    time.sleep(0.2)
+    driver.execute_script("arguments[0].click();", verify_btn)
+    print("✅ Tombol VERIFY berhasil diklik")
 
     # --- tunggu tombol KEMBALI muncul ---
-    back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
-    driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-    time.sleep(0.2)
-    driver.execute_script("arguments[0].click();", back_btn)
-    print("✅ Tombol KEMBALI berhasil diklik")
+    # back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
+    # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+    # time.sleep(0.2)
+    # driver.execute_script("arguments[0].click();", back_btn)
+    # print("✅ Tombol KEMBALI berhasil diklik")
 
     # ---  LANJUT KE FORM BERIKUTNYA 
     next_file = "verifkipi.exe" if getattr(sys, 'frozen', False) else "verifkipi.py"
@@ -184,3 +184,4 @@ except KeyboardInterrupt:
 except Exception as e:
     play_error()
     print(f"❌ Error di verifvaksinasi: {e}")
+
