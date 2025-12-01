@@ -344,25 +344,25 @@ def main():
                         continue
 
                 # # pause sebelum verify
-                ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
-                if ans == "stop":
-                    print("⏹️ Proses dihentikan user.")
-                    exit()
+                # ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
+                # if ans == "stop":
+                #     print("⏹️ Proses dihentikan user.")
+                #     exit()
                         
                 # --- tunggu tombol VERIFY muncul ---
-                # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-                # # scroll ke tombol dan klik
-                # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-                # time.sleep(0.2)
-                # driver.execute_script("arguments[0].click();", verify_btn)
-                # print("✅ Tombol VERIFY berhasil diklik")
+                verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+                # scroll ke tombol dan klik
+                driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+                time.sleep(0.2)
+                driver.execute_script("arguments[0].click();", verify_btn)
+                print("✅ Tombol VERIFY berhasil diklik")
 
                 # --- tunggu tombol KEMBALI muncul ---
-                back_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-close")))
-                driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-                time.sleep(0.2)
-                driver.execute_script("arguments[0].click();", back_btn)
-                print("✅ Tombol KEMBALI berhasil diklik")
+                # back_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-close")))
+                # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+                # time.sleep(0.2)
+                # driver.execute_script("arguments[0].click();", back_btn)
+                # print("✅ Tombol KEMBALI berhasil diklik")
 
             except KeyboardInterrupt:
                 print("\n🛑 Script dihentikan manual oleh user (CTRL+C).")
@@ -497,25 +497,25 @@ def main():
                     tulis_log(log_ws, log_wb, nomor_inklusi, SECTION, mismatches)
 
                 # --- Pause manual ---
-                ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
-                if ans == "stop":
-                    print("⏹️ Proses dihentikan user.")
-                    exit()
+                # ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
+                # if ans == "stop":
+                #     print("⏹️ Proses dihentikan user.")
+                #     exit()
 
                 # --- tunggu tombol VERIFY muncul ---
-                # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-                # # scroll ke tombol dan klik
-                # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-                # time.sleep(0.2)
-                # driver.execute_script("arguments[0].click();", verify_btn)
-                # print("✅ Tombol VERIFY berhasil diklik")
+                verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+                # scroll ke tombol dan klik
+                driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+                time.sleep(0.2)
+                driver.execute_script("arguments[0].click();", verify_btn)
+                print("✅ Tombol VERIFY berhasil diklik")
 
                 # --- tunggu tombol KEMBALI muncul ---
-                back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
-                driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-                time.sleep(0.2)
-                driver.execute_script("arguments[0].click();", back_btn)
-                print("✅ Tombol KEMBALI berhasil diklik")
+                # back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
+                # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+                # time.sleep(0.2)
+                # driver.execute_script("arguments[0].click();", back_btn)
+                # print("✅ Tombol KEMBALI berhasil diklik")
 
 
             except KeyboardInterrupt:
@@ -651,25 +651,25 @@ def main():
                     tulis_log(log_ws, log_wb, nomor_inklusi, SECTION, mismatches)
 
                 # --- Pause manual ---
-                ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
-                if ans == "stop":
-                    print("⏹️ Proses dihentikan user.")
-                    exit()
+                # ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
+                # if ans == "stop":
+                #     print("⏹️ Proses dihentikan user.")
+                #     exit()
 
                 # --- tunggu tombol VERIFY muncul ---
-                # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-                # # scroll ke tombol dan klik
-                # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-                # time.sleep(0.2)
-                # driver.execute_script("arguments[0].click();", verify_btn)
-                # print("✅ Tombol VERIFY berhasil diklik")
+                verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+                # --- scroll ke tombol dan klik ---
+                driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+                time.sleep(0.2)
+                driver.execute_script("arguments[0].click();", verify_btn)
+                print("✅ Tombol VERIFY berhasil diklik")
 
                 # --- tunggu tombol KEMBALI muncul ---
-                back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
-                driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-                time.sleep(0.2)
-                driver.execute_script("arguments[0].click();", back_btn)
-                print("✅ Tombol KEMBALI berhasil diklik")
+                # back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
+                # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+                # time.sleep(0.2)
+                # driver.execute_script("arguments[0].click();", back_btn)
+                # print("✅ Tombol KEMBALI berhasil diklik")
 
 
             except KeyboardInterrupt:
@@ -805,25 +805,25 @@ def main():
                     tulis_log(log_ws, log_wb, nomor_inklusi, SECTION, mismatches)
 
                 # --- Pause manual ---
-                ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
-                if ans == "stop":
-                    print("⏹️ Proses dihentikan user.")
-                    exit()
+                # ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
+                # if ans == "stop":
+                #     print("⏹️ Proses dihentikan user.")
+                #     exit()
 
                 # --- tunggu tombol VERIFY muncul ---
-                # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-                # # scroll ke tombol dan klik
-                # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-                # time.sleep(0.2)
-                # driver.execute_script("arguments[0].click();", verify_btn)
-                # print("✅ Tombol VERIFY berhasil diklik")
+                verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+                # scroll ke tombol dan klik
+                driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+                time.sleep(0.2)
+                driver.execute_script("arguments[0].click();", verify_btn)
+                print("✅ Tombol VERIFY berhasil diklik")
 
                 # --- tunggu tombol KEMBALI muncul ---
-                back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
-                driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-                time.sleep(0.2)
-                driver.execute_script("arguments[0].click();", back_btn)
-                print("✅ Tombol KEMBALI berhasil diklik")
+                # back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
+                # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+                # time.sleep(0.2)
+                # driver.execute_script("arguments[0].click();", back_btn)
+                # print("✅ Tombol KEMBALI berhasil diklik")
 
 
             except KeyboardInterrupt:
@@ -971,25 +971,25 @@ def main():
                     tulis_log(log_ws, log_wb, nomor_inklusi, SECTION, mismatches)
 
                 # --- Pause manual ---
-                ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
-                if ans == "stop":
-                    print("⏹️ Proses dihentikan user.")
-                    exit()
+                # ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
+                # if ans == "stop":
+                #     print("⏹️ Proses dihentikan user.")
+                #     exit()
 
                 # --- tunggu tombol VERIFY muncul ---
-                # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-                # # scroll ke tombol dan klik
-                # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-                # time.sleep(0.2)
-                # driver.execute_script("arguments[0].click();", verify_btn)
-                # print("✅ Tombol VERIFY berhasil diklik")
+                verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+                # scroll ke tombol dan klik
+                driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+                time.sleep(0.2)
+                driver.execute_script("arguments[0].click();", verify_btn)
+                print("✅ Tombol VERIFY berhasil diklik")
 
                 # --- tunggu tombol KEMBALI muncul ---
-                back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
-                driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-                time.sleep(0.2)
-                driver.execute_script("arguments[0].click();", back_btn)
-                print("✅ Tombol KEMBALI berhasil diklik")
+                # back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
+                # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+                # time.sleep(0.2)
+                # driver.execute_script("arguments[0].click();", back_btn)
+                # print("✅ Tombol KEMBALI berhasil diklik")
 
 
             except KeyboardInterrupt:
@@ -1141,25 +1141,25 @@ def main():
                 tulis_verif(log_ws, log_wb, nomor_inklusi)
 
                 # # --- Pause manual ---
-                ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
-                if ans == "stop":
-                    print("⏹️ Proses dihentikan user.")
-                    exit()
+                # ans = input("👉 Cek data, jika sudah OK, tekan ENTER untuk lanjut, atau ketik 'stop' untuk keluar: ").strip().lower()
+                # if ans == "stop":
+                #     print("⏹️ Proses dihentikan user.")
+                #     exit()
 
                 # --- tunggu tombol VERIFY muncul ---
-                # verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
-                # # scroll ke tombol dan klik
-                # driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
-                # time.sleep(0.2)
-                # driver.execute_script("arguments[0].click();", verify_btn)
-                # print("✅ Tombol VERIFY berhasil diklik")
+                verify_btn = wait_short.until(EC.element_to_be_clickable((By.ID, "btn-verify")))
+                # scroll ke tombol dan klik
+                driver.execute_script("arguments[0].scrollIntoView(true);", verify_btn)
+                time.sleep(0.2)
+                driver.execute_script("arguments[0].click();", verify_btn)
+                print("✅ Tombol VERIFY berhasil diklik")
 
                 # --- tunggu tombol KEMBALI muncul ---
-                back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
-                driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
-                time.sleep(0.2)
-                driver.execute_script("arguments[0].click();", back_btn)
-                print("✅ Tombol KEMBALI berhasil diklik")
+                # back_btn = wait_short.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn__cancel")))
+                # driver.execute_script("arguments[0].scrollIntoView(true);", back_btn)
+                # time.sleep(0.2)
+                # driver.execute_script("arguments[0].click();", back_btn)
+                # print("✅ Tombol KEMBALI berhasil diklik")
                 
                 
             except KeyboardInterrupt:
@@ -1192,3 +1192,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
