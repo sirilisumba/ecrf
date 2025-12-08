@@ -1190,10 +1190,11 @@ def main():
             print(f"⚠️ Gagal hapus baris: {e}")
 
         # jeda antar loop
-        print("🕓 Menunggu 3 detik sebelum lanjut ke data berikutnya...\n")
+        print("🕓 Menunggu 0.3 detik sebelum lanjut ke data berikutnya...\n")
         time.sleep(0.3)
 
     driver.quit()
 
 if __name__ == "__main__":
     main()
+
